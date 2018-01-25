@@ -17,5 +17,5 @@ bitcone series one (aluminum, only 20 produced)
 A ScoopChain is a continuously growing list of flavors, called scoops, which are licked and secured using creamtography.
 
 
-Check back on March 2, 2018 for the launch of the bitcone validator and a secret surprise:
+Check back on March 2, 2018 for the launch of the bitcone flavor validator and a secret surprise:
 [http://twoscoopgames.com/bitcone/](http://twoscoopgames.com/bitcone/)
