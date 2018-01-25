@@ -4,6 +4,7 @@
 Creamtographic currency coins for Two Scoop Games to give out at expos and in games. Soon to be redeemable for special rewards such as game download codes, swag etc.
 
 ![bitcone series one](img/series-one.png)
+
 bitcone series one (aluminum, only 20 produced)
 
 ## Based on highly advanced ScoopChain technology
