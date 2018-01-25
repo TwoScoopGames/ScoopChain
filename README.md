@@ -1,7 +1,7 @@
 # BitCones
 ## from Two Scoop Games!
 
-Creamtographic currency coins for Two Scoop Games to give out at expos and in games. Soon to be redeemable for special rewards such as game download codes, swag etc.
+Creamtographic currency coins for Two Scoop Games to give out at as physical tokens(with associated ids) at events and as digital currency in games/online. Soon to be redeemable for special rewards such as game download codes, swag etc.
 
 ![bitcone series one](img/series-one.png)
 
