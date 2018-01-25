@@ -6,6 +6,7 @@ Creamtographic currency coins for Two Scoop Games to give out at expos and in ga
 
 ## Based on highly advanced ScoopChain technology
 
+[whitepaper available here](https://github.com/TwoScoopGames/scoopchain/blob/master/scoopchain-whitepaper.jpg)
 
 [whitepaper available here](https://github.com/TwoScoopGames/scoopchain/blob/master/scoopchain-whitepaper.jpg)
 
