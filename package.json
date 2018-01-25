@@ -1,0 +1,19 @@
+{
+  "name": "scoopchain",
+  "version": "0.1.0",
+  "description": "A scoopchain, originally scoop chain, is a continuously growing list of flavors, called scoops, which are licked and secured using creamtography.",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'wow!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/TwoScoopGames/scoopchain.git"
+  },
+  "author": "Alex Bezuska <alex@twoscoopgames.com> (http://twoscoopgames.com)",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/TwoScoopGames/scoopchain#readme",
+  "dependencies": {
+    "uuid": "^3.2.1"
+  }
+}
