@@ -14,6 +14,9 @@
   "license": "MIT",
   "homepage": "https://github.org/TwoScoopGames/scoopchain#readme",
   "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "qrcode": "^1.2.0",
+    "shelljs": "^0.8.1",
     "uuid": "^3.2.1"
   }
 }
