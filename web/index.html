@@ -7,48 +7,44 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<style>
-body{
-  color: white;
-  background: #b42c92;
-  font-family: "helvetica", sans-serif;
-  text-align: center;
-}
-</style>
+        <style>
+        body{
+          color: white;
+          background: #b42c92;
+          font-family: "helvetica", sans-serif;
+          text-align: center;
+        }
+        </style>
+
         <script>
-var bitconeid = getParameterByName("id",window.location);
+        var bitconeid = getParameterByName("id",window.location);
 
-function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-</script>
-
-
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        </script>
 
     </head>
     <body>
       <img src="https://camo.githubusercontent.com/4a7cf94aedbd23c13cc2d75fdc3b2af5c816c208/687474703a2f2f7374617469632e646967672e636f6d2f7374617469632f696d616765732f6469676765722e676966"/>
       <h1> Bitcone from Two Scoop Games</h1>
-      <h2> your cone id: <script>document.write(bitconeid);</script>
+      <h2> your cone id: <script>document.write(bitconeid); //wtf is this PHP?</script>
       <h3> Come back for the launch on Mar 2, 2018! </h3>
 
 
         <script>
-
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-48152351-1', 'twoscoopgames.com');
-    ga('send', 'pageview');
-
-  </script>
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-48152351-1', 'twoscoopgames.com');
+        ga('send', 'pageview');
+        </script>
     </body>
 </html>
