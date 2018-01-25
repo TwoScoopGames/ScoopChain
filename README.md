@@ -6,9 +6,8 @@ Creamtographic currency coins for Two Scoop Games to give out at expos and in ga
 
 ## Based on highly advanced ScoopChain technology
 
-[whitepaper available here](https://github.com/TwoScoopGames/scoopchain/blob/master/scoopchain-whitepaper.jpg)
+[white paper available here](https://github.com/TwoScoopGames/scoopchain/blob/master/scoopchain-whitepaper.jpg)
 
-[whitepaper available here](https://github.com/TwoScoopGames/scoopchain/blob/master/scoopchain-whitepaper.jpg)
 
 A ScoopChain is a continuously growing list of flavors, called scoops, which are licked and secured using creamtography.
 
