@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/TwoScoopGames/scoopchain.git"
+    "url": "git+ssh://git@github.org/TwoScoopGames/scoopchain.git"
   },
   "author": "Alex Bezuska <alex@twoscoopgames.com> (http://twoscoopgames.com)",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/TwoScoopGames/scoopchain#readme",
+  "homepage": "https://github.org/TwoScoopGames/scoopchain#readme",
   "dependencies": {
     "uuid": "^3.2.1"
   }
