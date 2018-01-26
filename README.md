@@ -14,8 +14,7 @@ Bitcone series one (aluminum, only 20 produced)
 [white paper available here](https://github.com/TwoScoopGames/scoopchain/blob/master/scoopchain-whitepaper.jpg)
 
 
-A ScoopChain is a continuously growing list of flavors, called scoops, which are licked and secured using creamtography.
-
+The ScoopChain project is home to the Bitcone currency, the creamtographic technology that runs it, and a continuously growing crowd-sourced list of real ice cream flavors.
 
 Check back on March 2, 2018 for the launch of the Bitcone flavor validator and a secret surprise:
 [http://twoscoopgames.com/Bitcone/](http://twoscoopgames.com/Bitcone/)
