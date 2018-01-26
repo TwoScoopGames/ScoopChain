@@ -5,6 +5,10 @@
 
 Creamtographic currency coins for Two Scoop Games to give out at as physical tokens(with associated ids) at events and as digital currency in games/online. Soon to be redeemable for special rewards such as game download codes, swag etc.
 
+> "Bitcone is now my exclusive choice for black market ice cream purchases" 
+> > CM
+
+
 ![Bitcone series one](img/series-one.png)
 
 Bitcone series one (aluminum, only 20 produced)
