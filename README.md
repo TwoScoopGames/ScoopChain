@@ -1,7 +1,7 @@
 # Bitcones
 ### A Creamtographic currency from your friends at Two Scoop Games!
 
-#### Bitcones in circulation: 5/20
+#### Bitcones in circulation: 11/20
 
 Creamtographic currency coins for Two Scoop Games to give out at as physical tokens(with associated ids) at events and as digital currency in games/online. Soon to be redeemable for special rewards such as game download codes, swag etc.
 
