@@ -5,7 +5,7 @@
 
 Creamtographic currency coins for Two Scoop Games to give out at as physical tokens(with associated ids) at events and as digital currency in games/online. Soon to be redeemable for special rewards such as game download codes, swag etc.
 
-> "Bitcone is now my exclusive choice for black market ice cream purchases" 
+> "Bitcone is now my exclusive choice for black market ice cream purchases"
 > > CM
 
 
@@ -29,15 +29,25 @@ Check back on March 2, 2018 for the launch of the Bitcone flavor validator and a
 
 ## The main parts
 
-- Bitcone - a uuid that is created by the Bitcone generator and added to a master list
-  - Physical Bitcone coins - Created for handing out at events, just a transportation method for the Bitcone id, not the actual currency
-- The master list - a list of valid Bitcone ids (this is not a distributed thing, master list lives on a central server)
-- Validation service (takes a Bitcone id and a user's provided name or email)
-  - Checks the entered Bitcone ID against the master list
-  - Assigns a flavor from `flavors.json` to the Bitcone id
-  - Assigns a user email to the Bitcone id
-  - Creates an ScoopChain entry including Bitcone id, flavor and hashed user email
-- ScoopChain - a history of all Bitcone registrations, transfers, redemptions, and metadata
+- *[Bitcone admin](docs/bitcone-admin.md)*
+  - Operated by Two Scoop Games
+  - Generates Bitcones and stores them in a database
+  - A Bitcone consists of:
+    - Id (simply a generated uuid)
+    - Series
+    - QR code (for use on printed tokens)
+    - Flavor (randomly selected upon creation from `flavors.json` list)
+    - Owner (empty by default, added when a user registers Bitcone to their email)
+    - Created date
+
+
+- *Physical Bitcone coins*
+  - Created for handing out at events, just a transportation method for the Bitcone, not the actual currency
+
+
+- *Validation service* (takes a Bitcone id and a user's email)
+  - Checks to see if the Bitcone is in the database
+  - Assigns a user email to the Bitcone
 
 
 ## What you can do with Bitcones
@@ -58,5 +68,5 @@ But really - think of a Bitcone like a Two Scoop Games gift card and just someth
 1. User scans QR tag on the physical coin - or - User follows a pre-filled link from within one of our games after "earning" the Bitcone
 2. Bitcone webpage takes the Bitcone uuid as a query string passes it to backend service
 3. Backend service "licks" the Bitcone to validate it against a list on the server
-4. Webpage returns a flavor to the user randomly picked from the master flavors list using the Bitcone uuid as the seed (the same Bitcone  always returns the same flavor)
+4. Webpage returns a flavor to the user (the same Bitcone always returns the same flavor)
 5. User is given the current options for redeeming the Bitcone or can save it for use with any future offer.

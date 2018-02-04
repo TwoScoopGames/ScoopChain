@@ -49,7 +49,7 @@ app.get('/', (req, res, next) => {
     if (err) {
       console.log("There was an error connecting to the database", err);
     }
-    client.query('SELECT * FROM bitcones', (err, result) => {
+    client.query('SELECT * FROM bitcones ORDER BY created', (err, result) => {
 
       if (err) {
         console.log(err);

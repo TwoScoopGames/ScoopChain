@@ -1,7 +1,7 @@
 {
   "name": "scoopchain",
-  "version": "0.1.0",
-  "description": "A scoopchain, originally scoop chain, is a continuously growing list of flavors, called scoops, which are licked and secured using creamtography.",
+  "version": "0.2.0",
+  "description": "Creamtographic currency coins for Two Scoop Games to give out at as physical tokens(with associated ids) at events and as digital currency in games/online. Soon to be redeemable for special rewards such as game download codes, swag etc.",
   "main": "index.js",
   "scripts": {
     "start": "node bitcone-admin"
