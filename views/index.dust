@@ -1,0 +1,147 @@
+{>"layout" /}
+{<body}
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addFormModal">
+  <span class="oi oi-plus"></span>&nbsp;  Add bitcone
+</button>
+
+<div class="table-responsive">
+  <table class="table-striped table-sm table-bordered table-hover">
+    <thead>
+      <tr>
+        <td>qrcode</td>
+        <td>uuid</td>
+        <td>series</td>
+        <td>flavor</td>
+        <td>owner</td>
+        <td>edit</td>
+        <td>delete</td>
+      </tr>
+    </thead>
+
+    {#bitcones}
+    <tr>
+      <td><img  class="qrcode-sm" src="{qrcode}"/></td>
+      <td>{uuid}</td>
+      <td>{series}</td>
+      <td>{flavor}</td>
+      <td>{owner}</td>
+      <td>
+        <button class="btn btn-default edit-bitcone"
+        data-toggle="modal"
+        data-target="#editFormModal"
+        data-qrcode="/qrcodes/{uuid}.png"
+        data-uuid="{uuid}"
+        data-series="{series}"
+        data-flavor="{flavor}"
+        data-owner="{owner}">
+          <span class="oi oi-pencil"></span>
+        </button>
+      </td>
+      <td>
+        <button class="btn btn-default delete-bitcone" data-uuid="{uuid}">
+          <span class="oi oi-x"></span>
+        </button>
+      </td>
+    </tr>
+    {/bitcones}
+
+
+  </table>
+</div>
+
+
+
+
+
+<div class="modal fade" id="addFormModal" tabindex="-1" role="dialog" aria-labelledby="addFormModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form method="post" action="/add">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Bitcone</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+
+          <div class="form-group">
+            <label for="series">series</label>
+            <input type="text" class="form-control" name="series" id="series" value="2">
+          </div>
+
+
+          <div class="form-group">
+            <label for="owner">owner</label>
+            <input type="text" class="form-control" name="owner" id="owner">
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+          <input type="submit" class="btn btn-primary" value="Save"/>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="editFormModal" tabindex="-1" role="dialog" aria-labelledby="editFormModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form method="post" action="/edit">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Bitcone</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <img src="http://placehold.it/200/200" id="edit-form-qrcode"/>
+          <fieldset disabled>
+          <div class="form-group">
+            <label for="edit-form-uuid">uuid</label>
+          <input type="text" class="form-control disabled" id="edit-form-uuid" name="uuid" />
+          </div>
+        </fieldset>
+
+          <div class="form-group">
+            <label for="edit-form-series">series</label>
+            <input type="text" class="form-control" name="series" id="edit-form-series" >
+          </div>
+
+
+          <div class="form-group">
+            <label for="edit-form-flavor">flavor</label>
+            <input type="text" class="form-control" name="flavor" id="edit-form-flavor" >
+          </div>
+
+          <div class="form-group">
+            <label for="edit-form-owner">owner</label>
+            <input type="text" class="form-control" name="owner" id="edit-form-owner" >
+          </div>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+          <input type="submit" class="btn btn-primary" value="Update"/>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{/body}

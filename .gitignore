@@ -1,5 +1,5 @@
 node_modules
-qrcodes/*
-!qrcodes/.gitkeep
+public/qrcodes/*
+!public/qrcodes/.gitkeep
 valid-bitcones.json
 .DS_Store
