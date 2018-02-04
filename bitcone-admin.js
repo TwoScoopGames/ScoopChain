@@ -70,24 +70,28 @@ app.post('/add', (req, res) => {
     if (err) {
       console.log("There was an error connecting to the database", err);
     }
-    var newBitconeId = uuid();
-    client.query(
-      "INSERT INTO bitcones(uuid, series, flavor, owner) VALUES($1, $2, $3, $4)",
-      [
-        newBitconeId,
-        req.body.series,
-        randomItem(flavors),
-        req.body.owner
-      ]
-    );
-    createBitconeQR(newBitconeId);
+    console.log(req.body.quantity);
+
+    for (var i = 0; i < req.body.quantity; i++){
+      addBitcone(client, req.body.series, req.body.owner);
+    }
+
     done();
     res.redirect('/');
   });
 });
 
+function addBitcone(client, series, owner){
+  var newBitconeId = uuid();
+  client.query(
+    "INSERT INTO bitcones(uuid, series, flavor, owner) VALUES($1, $2, $3, $4)",
+    [ newBitconeId, series, randomItem(flavors), owner]
+  );
+  createBitconeQR(newBitconeId);
+}
 
-app.delete('/delete/:id', (req, res) => {
+
+app.delete('/delete/:uuid', (req, res) => {
   pool.connect( (err, client, done) => {
     if (err) {
       console.log("There was an error connecting to the database", err);

@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   $('.delete-bitcone').on('click', function(){
-    var id = $(this).data('id');
-    var url = '/delete/' + id;
+    var uuid = $(this).data('uuid');
+    var url = '/delete/' + uuid;
     if(confirm('Delete Bitcone?')){
       $.ajax({
         url: url,
